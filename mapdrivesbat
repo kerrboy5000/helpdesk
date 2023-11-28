@@ -1,0 +1,16 @@
+Create a bat file to map network drives
+Start by opening notepad, paste the below three lines in and replace the drive letter goes here and the network loacation path goes here with the drive and path of your choosing. Make sure you delete the brackets.
+
+@ECHO OFF
+net use (Drive Letter Goes here): (\\Network Location path goes here) /persistent:yes
+EXIT
+
+Save the txt file. 
+Right click on the txt file and add .bat to the end of the file name to change it to a bat file. 
+Double click the .bat file you have created and it will map the drive. 
+
+Optional, add to startup folder so .bat file runs at startup
+Win + R
+shell:startup
+copy the bat file into the shell:startup folder
+
